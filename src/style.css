@@ -1,0 +1,168 @@
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  color: #333;
+}
+
+nav {
+  background: #222;
+  color: white;
+  padding: 15px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 15px;
+}
+
+nav a:hover {
+  color: #00bcd4;
+}
+
+section {
+  padding: 60px 10%;
+  text-align: center;
+}
+
+.home {
+  background: #dff6f5;
+  padding: 100px 20px;
+}
+
+.home h1 {
+  font-size: 40px;
+}
+
+.home h2 {
+  color: #008b95;
+}
+
+.btn {
+  display: inline-block;
+  background: #008b95;
+  color: white;
+  padding: 12px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 15px;
+}
+
+.skills {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.skills div {
+  background: white;
+  padding: 20px 30px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px #ccc;
+}
+
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  nav a {
+    margin: 5px;
+  }
+
+  .home h1 {
+    font-size: 30px;
+  }
+}
+
+
+
+.personal-info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  max-width: 700px;
+  margin: 30px auto 0;
+}
+
+.info-card {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px #ccc;
+  border-top: 4px solid #008b95;
+  text-align: left;
+  transition: transform 0.3s;
+}
+
+.info-card:hover {
+  transform: translateY(-5px);
+}
+
+.info-card h3 {
+  color: #008b95;
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+.info-card p {
+  color: #555;
+  margin: 0;
+  line-height: 1.6;
+}
+
+@media (max-width: 600px) {
+  .personal-info {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+.project-card {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px #ccc;
+  width: 280px;
+  text-align: left;
+  transition: transform 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card h3 {
+  color: #008b95;
+  margin-bottom: 12px;
+}
+
+.project-card p {
+  color: #555;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.project-card span {
+  display: inline-block;
+  background: #dff6f5;
+  color: #008b95;
+  padding: 6px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+}
